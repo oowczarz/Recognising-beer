@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piweczko</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #cf9de0;
+        }
+        input[type="submit"] {
+            background: linear-gradient(to right, #6a11cb, #ba46e0);
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #6a11cb;
+            font-size: 150%;
+        }
+
+        .file_handler {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        h1, p, img, a {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Wgraj obraz piwa</h1>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <input type="file" name="beer_image" accept="image/*" required class="file_handler">
+        <br><br>
+        <input type="submit" value="Prześlij">
+    </form>
+</body>
+
+</html>
